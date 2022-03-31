@@ -29,6 +29,10 @@ app.use(methodOverride("_method"));
 app.use("/fruits", fruitsController);
 app.use("/users", usersController);
 
+app.get('/', (req, res)=>{
+    res.send('hello')
+})
+
 //Listener
 app.listen(PORT, () => {
     console.log("express started on " + PORT)
