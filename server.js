@@ -13,7 +13,7 @@ mongoose.connect(mongoURI, {}, () => {
     console.log("connected to mongodb")
 })
 const app = express();
-const PORT = process.env.PORT ?? 3000;
+const PORT = process.env.PORT ?? 2000;
 
 //Middleware
 app.use(morgan("tiny"))
